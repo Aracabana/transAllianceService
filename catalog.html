@@ -8,12 +8,10 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
     <meta http-equiv="x-rim-auto-match" content="none">
-    <title>DealGoods</title>
+    <title>Trance Alliance Service</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid-validation-modal-tabs-print.css">
-    <link rel="stylesheet" href="css/ion.rangeSlider.css">
-    <link rel="stylesheet" href="css/jquery.formstyler.css">
-    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,12 +19,18 @@
 <header>
     <div class="container header-container">
         <a href="index.html" class="logo header-logo">
-            <img src="./img/logo.png" alt="" class="logo-img header-logo-img">
+            <img src="./img/logo-dark.png" alt="" class="logo-img header-logo-img">
         </a>
-        <form id="header-search-form" class="header-search">
-            <input id="header-search" type="search" class="header-search-input" placeholder="Поиск">
-            <button id="header-search-btn" class="header-search-btn" type="submit"></button>
-        </form>
+        <div class="header-contacts">
+            <a href="mailto:info@mail.ru" class="header-contacts-item header-contacts-item-email">
+                <span>info@mail.ru</span>
+            </a>
+            <a href="tel:+79161234567" class="header-contacts-item header-contacts-item-tel">
+                <span>+7 916 123-45-67</span>
+            </a>
+        </div>
+        <a href="" class="btn btn-dark btn-border btn-bold header-callback-btn" data-href="#request-call-popup" data-toggle="modal"
+           data-target="#request-call-popup">Обратный звонок</a>
     </div>
     <nav id="js-menu-wrapper" class="header-menu-wrapper">
         <div class="container header-menu-container">
@@ -36,119 +40,50 @@
                 <span class="header-menu-btn-item header-menu-btn-item-3"></span>
             </button>
             <ul id="js-menu" class="header-menu">
+                <li class="header-menu-item">
+                    <a href="index.html" class="header-menu-link">Главная</a>
+                </li>
+                <li class="header-menu-item">
+                    <a href="text-page.html" class="header-menu-link">О компании</a>
+                </li>
                 <li class="header-menu-item header-menu-item-with-submenu">
-                    <a href="catalog.html" class="header-menu-link">Каталог</a>
+                    <a href="index.html#services" class="header-menu-link">Каталог</a>
                     <button class="header-submenu-btn js-submenu-btn" type="button"></button>
                     <ul class="header-submenu js-submenu">
-                        <li class="header-submenu-item header-submenu-item-with-submenu">
-                            <a href="catalog.html" class="header-submenu-link">Категория 1</a>
-                            <button class="header-submenu-btn js-submenu-btn" type="button"></button>
-                            <ul class="header-submenu js-submenu">
-                                <li class="header-submenu-item header-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="header-submenu-link">Податегория 1</a>
-                                    <button class="header-submenu-btn js-submenu-btn" type="button"></button>
-                                    <ul class="header-submenu js-submenu">
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="header-submenu-item header-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="header-submenu-link">Податегория 2</a>
-                                    <button class="header-submenu-btn js-submenu-btn" type="button"></button>
-                                    <ul class="header-submenu js-submenu">
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header-submenu-item header-submenu-item-with-submenu">
-                            <a href="catalog.html" class="header-submenu-link">Категория 2</a>
-                            <button class="header-submenu-btn js-submenu-btn" type="button"></button>
-                            <ul class="header-submenu js-submenu">
-                                <li class="header-submenu-item header-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="header-submenu-link">Податегория 1</a>
-                                    <button class="header-submenu-btn js-submenu-btn" type="button"></button>
-                                    <ul class="header-submenu js-submenu">
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="header-submenu-item header-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="header-submenu-link">Податегория 2</a>
-                                    <button class="header-submenu-btn js-submenu-btn" type="button"></button>
-                                    <ul class="header-submenu js-submenu">
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header-submenu-item header-submenu-item-with-submenu">
-                            <a href="catalog.html" class="header-submenu-link">Категория 3</a>
-                            <button class="header-submenu-btn js-submenu-btn" type="button"></button>
-                            <ul class="header-submenu js-submenu">
-                                <li class="header-submenu-item header-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="header-submenu-link">Податегория 1</a>
-                                    <button class="header-submenu-btn js-submenu-btn" type="button"></button>
-                                    <ul class="header-submenu js-submenu">
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="header-submenu-item header-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="header-submenu-link">Податегория 2</a>
-                                    <button class="header-submenu-btn js-submenu-btn" type="button"></button>
-                                    <ul class="header-submenu js-submenu">
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="header-submenu-item">
-                                            <a href="catalog.html" class="header-submenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <li class="header-submenu-item">
+                            <a href="catalog.html" class="header-submenu-link">Воздушные перевозки</a>
                         </li>
                         <li class="header-submenu-item">
-                            <a href="catalog.html" class="header-submenu-link">Категория 4</a>
+                            <a href="catalog.html" class="header-submenu-link">Морские перевозки</a>
+                        </li>
+                        <li class="header-submenu-item">
+                            <a href="catalog.html" class="header-submenu-link">Сухопутные перевозки</a>
+                        </li>
+                        <li class="header-submenu-item">
+                            <a href="catalog.html" class="header-submenu-link">Управление отходами</a>
+                        </li>
+                        <li class="header-submenu-item">
+                            <a href="catalog.html" class="header-submenu-link">Транспортировка отходов</a>
+                        </li>
+                        <li class="header-submenu-item">
+                            <a href="catalog.html" class="header-submenu-link">Услуги специализированной техники</a>
+                        </li>
+                        <li class="header-submenu-item">
+                            <a href="catalog.html" class="header-submenu-link">Аренда осветительных мачт</a>
+                        </li>
+                        <li class="header-submenu-item">
+                            <a href="catalog.html" class="header-submenu-link">Аренда осветительных мачт</a>
+                        </li>
+                        <li class="header-submenu-item">
+                            <a href="catalog.html" class="header-submenu-link">Аренда дизельных генераторов</a>
+                        </li>
+                        <li class="header-submenu-item">
+                            <a href="catalog.html" class="header-submenu-link">Аренда легкового автотранспорта с водителем и без</a>
                         </li>
                     </ul>
                 </li>
                 <li class="header-menu-item">
-                    <a href="#shops" class="header-menu-link js-link">Магазины</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="text-page.html" class="header-menu-link">О проекте</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="faq.html" class="header-menu-link">Вопрос-ответ</a>
-                </li>
-                <li class="header-menu-item">
                     <a href="reviews.html" class="header-menu-link">Отзывы</a>
-                </li>
-                <li class="header-menu-item">
-                    <a href="cooperation.html" class="header-menu-link">Сотрудничество</a>
                 </li>
                 <li class="header-menu-item">
                     <a href="blog.html" class="header-menu-link">Статьи</a>
@@ -160,11 +95,7 @@
         </div>
     </nav>
 </header>
-<div class="catalog-welcome">
-    <div class="container">
-        <p class="catalog-welcome-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-    </div>
-</div>
+<div class="content-wrapper content-wrapper-inner">
 <div class="breadcrumbs">
     <div class="container">
         <ul>
@@ -175,741 +106,141 @@
 </div>
 <section class="section-inner">
     <div class="container">
-        <h1 class="section-title">Каталог</h1>
+        <h1 class="section-title page-title section-title-decorate"><span>Аренда легкового автотранспорта с водителем и без</span></h1>
         <div class="row">
-            <div class="col-lg-3 catalog-filter">
-                <div class="catalog-widget product-menu-wrapper js-hidden-content-wrapper">
-                    <button class="product-menu-main-button js-btn-show" type="button">Каталог</button>
-                    <ul class="product-menu hidden-content js-hidden-content">
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Овощи, фрукты, ягоды</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Молочные продукты, сыр и яйца</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper active">
-                            <a href="catalog.html" class="product-menu-link">Мясо и птица</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu active">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item active">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Замороженное продукты</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Хлеб и выпечка</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Безалкогольные напитки</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Мясные продукты</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Рыба и морепродукты</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Бакалея</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Соусы и приправы</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Кондитерские изделия</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Чай, Кофе, Какао</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Эко, Био и Органик продукты</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Бытовая химия и товары для дома</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Косметика и гигиена</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Алкоголь</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Товары для детей</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Товары для животных</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Автотовары</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="product-menu-item product-menu-item-with-submenu js-hidden-content-wrapper">
-                            <a href="catalog.html" class="product-menu-link">Сезонные товары</a>
-                            <button class="product-menu-btn js-btn-show" type="button"></button>
-                            <ul class="product-submenu hidden-content js-hidden-content">
-                                <li class="product-submenu-item product-submenu-item-with-submenu">
-                                    <a href="catalog.html" class="product-submenu-link">Подкатегория</a>
-                                    <button class="product-menu-btn js-btn-show" type="button"></button>
-                                    <ul class="product-subsubmenu hidden-content js-hidden-content">
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                        <li class="product-subsubmenu-item">
-                                            <a href="catalog.html" class="product-subsubmenu-link">Подкатегория</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="catalog-widget catalog-categories">
-                    <li class="catalog-categories-item">
-                        <a href="catalog.html" class="catalog-categories-link">
-                            <img src="img/ico-catalog-categories-best.png" class="catalog-categories-link-img" alt="">
-                            Лучшее
-                        </a>
+            <div class="col-lg-3 catalog-menu-wrapper">
+                <ul class="catalog-menu">
+                    <li class="catalog-menu-item active">
+                        <a href="catalog.html" class="catalog-menu-link">Воздушные перевозки</a>
                     </li>
-                    <li class="catalog-categories-item active">
-                        <a href="catalog.html" class="catalog-categories-link">
-                            <img src="img/ico-catalog-categories-barbecue.png" class="catalog-categories-link-img" alt="">
-                            На шашлык
-                        </a>
+                    <li class="catalog-menu-item">
+                        <a href="catalog.html" class="catalog-menu-link">Морские перевозки</a>
                     </li>
-                    <li class="catalog-categories-item">
-                        <a href="catalog.html" class="catalog-categories-link">
-                            <img src="img/ico-catalog-categories-monitoring.png" class="catalog-categories-link-img" alt="">
-                            Мониторинг
-                        </a>
+                    <li class="catalog-menu-item">
+                        <a href="catalog.html" class="catalog-menu-link">Сухопутные перевозки</a>
                     </li>
-                    <li class="catalog-categories-item">
-                        <a href="catalog.html" class="catalog-categories-link">
-                            <img src="img/ico-catalog-categories-easter.png" class="catalog-categories-link-img" alt="">
-                            Пасха
-                        </a>
+                    <li class="catalog-menu-item">
+                        <a href="catalog.html" class="catalog-menu-link">Управление отходами</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                        <a href="catalog.html" class="catalog-menu-link">Транспортировка отходов</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                        <a href="catalog.html" class="catalog-menu-link">Услуги специализированной техники</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                        <a href="catalog.html" class="catalog-menu-link">Аренда осветительных мачт</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                        <a href="catalog.html" class="catalog-menu-link">Аренда дизельных генераторов</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                        <a href="catalog.html" class="catalog-menu-link">Аренда легкового автотранспорта с водителем и без</a>
                     </li>
                 </ul>
-                <form id="catalog-shops" class="catalog-widget catalog-shops">
-                    <button class="catalog-shops-btn js-btn-show" type="button">Магазины</button>
-                    <ul class="catalog-shops-menu hidden-content js-hidden-content">
-                        <li class="catalog-shops-menu-item">
-                            <input type="checkbox" id="shop1" name="shop1">
-                            <label for="shop1" class="checkbox-label">Перекресток</label>
-                        </li>
-                        <li class="catalog-shops-menu-item">
-                            <input type="checkbox" id="shop2" name="shop2" checked>
-                            <label for="shop2" class="checkbox-label">Перекресток</label>
-                        </li>
-                        <li class="catalog-shops-menu-item">
-                            <input type="checkbox" id="shop3" name="shop3">
-                            <label for="shop3" class="checkbox-label">Перекресток</label>
-                        </li>
-                    </ul>
-                </form>
-                <form id="catalog-price" class="catalog-widget catalog-price js-catalog-price">
-                    <p class="catalog-price-label">Цена</p>
-                    <div class="catalog-price-in">
-                        <input id="catalog-price-input" name="catalog-price-input" type="text"
-                               class="js-ion-range-slider catalog-price-input"
-                               data-min="1" data-max="100000">
-                        
-                        <div class="row">
-                            <div class="col-6">
-                                <label class="label-sm">от</label>
-                                <input id="min-price" type="text" value=""
-                                       class="form-control form-control-sm js-range-min" data-min="0">
-                            </div>
-                            <div class="col-6">
-                                <label class="label-sm">до</label>
-                                <input id="max-price" type="text" value=""
-                                       class="form-control form-control-sm js-range-max" data-max="100000">
-                            </div>
-                        </div>
-                    </div>
-                </form>
             </div>
             <div class="col-lg-9">
-                <form id="catalog-top-filter-form" class="catalog-top-filter">
-                    <div class="catalog-top-filter-sort">
-                        <p class="catalog-top-filter-sort-title">Сортировать по</p>
-                        <select name="catalog-sort" id="catalog-sort">
-                            <option value="discounts">% Скидки</option>
-                            <option value="discounts">&uarr; Цена по возрастанию</option>
-                            <option value="discounts">&darr; Цена по убыванию</option>
-                        </select>
-                    </div>
-                    <div class="catalog-top-filter-best-price">
-                        <input id="best-price" type="checkbox">
-                        <label for="best-price" class="checkbox-label catalog-top-filter-best-price-label">Лучшая цена</label>
-                    </div>
-                    <div class="catalog-top-filter-btns-bar">
-                        <button id="js-catalog-list-rows-btn" class="catalog-top-filter-btn catalog-top-filter-btn-row"
-                                type="button"></button>
-                        <button id="js-catalog-list-cols-btn" class="catalog-top-filter-btn catalog-top-filter-btn-col active"
-                                type="button"></button>
-                    </div>
-                </form>
-                <div class="row catalog-list">
+                <div class="row">
                     <div class="col-12 col-sm-6 col-lg-4 card-wrapper">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-blue">
-                                <p>Акция</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
+                        <a href="product-page.html" class="product-card">
+                            <div class="product-card-img-wrapper" style="background-image: url('img/img-product-card.jpg');"></div>
                             <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup" class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
+                                <p class="product-card-title">Lorem ipsum dolor sit amet orem ipsum dolor sit amet</p>
+                                <p class="product-card-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                                <span class="btn btn-dark btn-sm product-card-btn">Подробнее</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 card-wrapper">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
+                        <a href="product-page.html" class="product-card">
+                            <div class="product-card-img-wrapper" style="background-image: url('img/img-product-card.jpg');"></div>
                             <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup" class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
+                                <p class="product-card-title">Lorem ipsum dolor sit amet</p>
+                                <p class="product-card-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                                <span class="btn btn-dark btn-sm product-card-btn">Подробнее</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 card-wrapper">
-                        <div class="banner banner-vertical">Баннер</div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 card-wrapper">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
+                        <a href="product-page.html" class="product-card">
+                            <div class="product-card-img-wrapper"></div>
                             <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup" class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
+                                <p class="product-card-title">Lorem ipsum dolor sit amet</p>
+                                <p class="product-card-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                                <span class="btn btn-dark btn-sm product-card-btn">Подробнее</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 card-wrapper">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
+                        <a href="product-page.html" class="product-card">
+                            <div class="product-card-img-wrapper" style="background-image: url('img/img-product-card.jpg');"></div>
                             <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup" class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
+                                <p class="product-card-title">Lorem ipsum dolor sit amet</p>
+                                <p class="product-card-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                                <span class="btn btn-dark btn-sm product-card-btn">Подробнее</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 card-wrapper">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
+                        <a href="product-page.html" class="product-card">
+                            <div class="product-card-img-wrapper" style="background-image: url('img/img-product-card.jpg');"></div>
                             <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup" class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
+                                <p class="product-card-title">Lorem ipsum dolor sit amet</p>
+                                <p class="product-card-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                                <span class="btn btn-dark btn-sm product-card-btn">Подробнее</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 card-wrapper">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" data-toggle="modal"
-                               data-target="#product-popup" class="product-card-img-wrapper">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
+                        <a href="product-page.html" class="product-card">
+                            <div class="product-card-img-wrapper" style="background-image: url('img/img-product-card.jpg');"></div>
                             <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup" data-toggle="modal"
-                                       data-target="#product-popup" class="product-card-title">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" data-toggle="modal"
-                                       data-target="#product-popup" class="btn btn-orange product-card-btn">Подробнее</a>
-                                </div>
+                                <p class="product-card-title">Lorem ipsum dolor sit amet</p>
+                                <p class="product-card-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                                <span class="btn btn-dark btn-sm product-card-btn">Подробнее</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 card-wrapper">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
+                        <a href="product-page.html" class="product-card">
+                            <div class="product-card-img-wrapper" style="background-image: url('img/img-product-card.jpg');"></div>
                             <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup" class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
+                                <p class="product-card-title">Lorem ipsum dolor sit amet</p>
+                                <p class="product-card-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                                <span class="btn btn-dark btn-sm product-card-btn">Подробнее</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 card-wrapper">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
+                        <a href="product-page.html" class="product-card">
+                            <div class="product-card-img-wrapper" style="background-image: url('img/img-product-card.jpg');"></div>
                             <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup" class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
+                                <p class="product-card-title">Lorem ipsum dolor sit amet</p>
+                                <p class="product-card-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                                <span class="btn btn-dark btn-sm product-card-btn">Подробнее</span>
                             </div>
-                        </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 card-wrapper">
+                        <a href="product-page.html" class="product-card">
+                            <div class="product-card-img-wrapper" style="background-image: url('img/img-product-card.jpg');"></div>
+                            <div class="product-card-content">
+                                <p class="product-card-title">Lorem ipsum dolor sit amet</p>
+                                <p class="product-card-text">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                                <span class="btn btn-dark btn-sm product-card-btn">Подробнее</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="banner">Баннер</div>
+                
                 <div class="pagination">
                     <a href="" class="page page-prev">Назад</a>
                     <a href="" class="page">1</a>
@@ -923,319 +254,101 @@
         </div>
     </div>
 </section>
-
+<section class="section-inner text-section">
+    <div class="container">
+        <h2>Заголовок блока</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <ul>
+            <li>enim ad minim veniam, quis no</li>
+            <li>enim ad minim veniam, quis no</li>
+        </ul>
+    </div>
+</section>
+</div>
 <footer>
     <div class="container footer-container">
         <div class="footer-logo">
-            <img src="./img/logo.png" alt="" class="footer-logo-img">
+            <img src="./img/logo-light.png" alt="" class="footer-logo-img">
         </div>
-        <div class="footer-item footer-menu-wrapper">
-            <h4 class="footer-title">Меню:</h4>
-            <ul class="footer-menu">
-                <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="">Магазины</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="text-page.html">О проекте</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="faq.html">Вопрос-ответ</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="reviews.html">Отзывы</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="cooperation.html">Сотрудничество</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="blog.html">Статьи</a>
-                </li>
-                <li class="footer-menu-item">
-                    <a class="footer-menu-link" href="contacts.html">Контакты</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-item footer-catalog-menu-wrapper">
-            <h4 class="footer-title"><a href="catalog.html">Каталог:</a></h4>
-            <div class="footer-catalog-menu-wrapper-in">
-                <ul class="footer-menu footer-catalog-menu">
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Овощи, фрукты, ягоды</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Молочные продукты, сыр и&nbsp;яйца</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Мясо и&nbsp;птица</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Замороженное продукты</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Хлеб и&nbsp;выпечка</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Безалкогольные напитки</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Мясные продукты</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Рыба и&nbsp;морепродукты</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Бакалея</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Соусы и&nbsp;приправы</a>
-                    </li>
-                </ul>
-                <ul class="footer-menu footer-catalog-menu">
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Кондитерские изделия</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Чай, Кофе, Какао</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Эко, Био и&nbsp;Органик продукты</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Бытовая химия и&nbsp;товары для&nbsp;дома</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Косметика и&nbsp;гигиена</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Алкоголь (не&nbsp;для&nbsp;Продажи)</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Товары для&nbsp;детей</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Товары для&nbsp;животных</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Автотовары</a>
-                    </li>
-                    <li class="footer-menu-item">
-                        <a class="footer-menu-link" href="catalog.html">Сезонные товары</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-item footer-contacts">
-            <h4 class="footer-title">Контакты:</h4>
-            <div class="contacts-item-address contacts-item footer-contacts-item">
-                <p><span>г.&nbsp;Москва, ул.&nbsp;Первая, д.&nbsp;36<br>
-Станция метро “Киевская”</span></p>
-            </div>
-            <div class="contacts-item-phone contacts-item footer-contacts-item">
-                <a href="tel:+79651234567" class="contacts-link"><span>+375 44 123-45-67</span></a>
-            </div>
-            <div class="contacts-item-email contacts-item footer-contacts-item">
-                <a href="mailto:mail@mail.ru" class="contacts-link"><span>mail@mail.ru</span></a>
-            </div>
+        <ul class="footer-menu">
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="index.html">Главная</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="text-page.html">О компании</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="reviews.html">Отзывы</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="blog.html">Статьи</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="contacts.html">Контакты</a>
+            </li>
+        </ul>
+        <ul class="footer-menu">
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="catalog.html">Воздушные, морские, сухопутные перевозки</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="catalog.html">Управление отходами</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="catalog.html">Транспортировка отходов</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="catalog.html">Услуги специализированной техники</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="catalog.html">Аренда осветительных мачт и дизельных генераторов</a>
+            </li>
+            <li class="footer-menu-item">
+                <a class="footer-menu-link" href="catalog.html">Аренда легкового автотранспорта с водителем и без</a>
+            </li>
+        </ul>
+        <div class="footer-contacts">
+            <p class="footer-contacts-item">
+                <a href="tel:+79161234567" class="footer-contacts-link">+7 916 123-45-67</a>
+            </p>
+            <p class="footer-contacts-item">
+                <a href="mailto:info@mail.ru" class="footer-contacts-link">info@mail.ru</a>
+            </p>
         </div>
     </div>
 </footer>
 
-<div id="product-popup" class="popup-bg" style="display: none;">
-    <div class="popup product-popup">
-        <div class="popup-content product-popup-content">
-            <button type="button" class="js-popup-close popup-close"></button>
-            <div class="product-info">
-                <img src="img/img-product-popup.jpg" data-large="img/img-product-popup-big.jpg" alt="" class="product-img">
-                <h3 class="product-name">Колбаса “Столичная рублевская”</h3>
-                <p><strong>Вес: </strong>300гр.</p>
-                <p><strong>1кг</strong> / 299,90 руб.</p>
-                <p><strong>Цена:</strong> <span class="product-price-new price">299,90</span> <span class="product-price-old price">719,00</span></p>
-                <div class="product-info-in">
-                    <p class="product-discount">20%</p>
-                    <div class="product-shop">
-                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                    </div>
+<div id="request-call-popup" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+                <span class="modal-close-item modal-close-item-1"></span>
+                <span class="modal-close-item modal-close-item-2"></span>
+            </button>
+            <h3 class="modal-title">Обратный звонок</h3>
+            <form is="request-call-form" class="modal-form">
+                <div class="form-group">
+                    <input id="request-call-name" name="request-call-name" type="text" class="form-control form-control-dark" placeholder="Имя">
                 </div>
-            </div>
-            <div class="product-tabs">
-                <ul class="nav nav-tabs tabs">
-                    <li class="tabs-item active">
-                        <a href="#info" data-toggle="tab">Информация</a>
-                    </li>
-                    <li class="tabs-item">
-                        <a href="#composition" data-toggle="tab">Состав</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="info" class="tab-pane fade in active">
-                        <p><strong>Изготовитель:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                        <p><strong>Описание:</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    </div>
-                    <div id="composition" class="tab-pane fade">
-                        <ul>
-                            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        </ul>
-                        <ol>
-                            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                            <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        </ol>
-                    </div>
+                <div class="form-group">
+                    <input id="request-call-tel" name="request-call-tel" type="tel" class="form-control form-control-dark" placeholder="Телефон">
                 </div>
-            </div>
-            <div class="similar-goods">
-                <h3 class="section-title similar-goods-title">Похожие товары</h3>
-                <div class="similar-goods-slider js-similar-goods-slider">
-                    <div class="similar-goods-slide">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
-                            <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup"class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="similar-goods-slide">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
-                            <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup"class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="similar-goods-slide">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
-                            <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup"class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="similar-goods-slide">
-                        <div class="product-card">
-                            <div class="product-card-status product-card-status-green">
-                                <p>Лучшая цена</p>
-                            </div>
-                            <a href="" data-href="#product-popup" class="product-card-img-wrapper js-popup-open">
-                                <img src="img/img-product-card.jpg" alt="">
-                            </a>
-                            <div class="product-card-content">
-                                <div class="product-card-content-item">
-                                    <a href="" data-href="#product-popup"class="product-card-title js-popup-open">Колбаса “Столичная рублевская”</a>
-                                    <div class="product-card-info">
-                                        <p><strong>Вес: </strong>300гр.</p>
-                                        <p><strong>1кг</strong> / 299,90 руб.</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-middle">
-                                    <p class="product-discount">20%</p>
-                                    <div class="product-shop">
-                                        <img src="img/product-card-logo.jpg" alt="" class="product-shop-logo">
-                                        <a href="shop-page.html" class="product-shop-name">"Перекресток"</a>
-                                        <p class="product-shop-duration">с 27 мая по 2 июня</p>
-                                    </div>
-                                </div>
-                                <div class="product-card-content-item product-card-footer">
-                                    <p class="product-price">
-                                        <span class="product-price-new price">299,90</span>
-                                        <span class="product-price-old price">719,00</span>
-                                    </p>
-                                    <a href="" data-href="#product-popup" class="btn btn-orange product-card-btn js-popup-open">Подробнее</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <button class="btn btn-dark btn-bold btn-border btn-form">Перезвоните</button>
+            </form>
+            <p class="form-disclaimer">
+                Нажимая "Перезвоните" Вы даете согласие на обработку персональных данных и соглашаетесь c <a href="text-page.html">пользовательским
+                соглашением и политикой конфиденциальности</a>.
+            </p>
         </div>
     </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="js/jquery.formstyler.min.js"></script>
-<script src="js/ion.rangeSlider.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/zoomsl-3.0.min.js"></script>
-<script src="js/bootstrap-tabs.min.js"></script>
+<script src="js/bootstrap-modal.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

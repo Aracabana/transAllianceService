@@ -26,6 +26,18 @@ $(document).ready(function () {
         }
     }
     
+    //scroll to services
+    var links = $('.js-link');
+    links.click(function(e) {
+        e.preventDefault();
+        var link = $(this),
+            linkHref = link.attr('href'),
+            top = $(linkHref).offset().top;
+        links.removeClass('active');
+        link.addClass('active');
+        $('body,html').animate({scrollTop: top}, 900);
+    });
+    
     //mobile menu
     $('#js-menu-btn').click(function (e) {
         e.preventDefault();
@@ -42,6 +54,7 @@ $(document).ready(function () {
     if ($('*').is('#js-welcome-slider')) {
         let swiper = new Swiper('#js-welcome-slider', {
             slidesPerView: 1,
+            effect: 'flip',
             loop: true,
             speed: 400,
             autoplay: {
@@ -85,6 +98,30 @@ $(document).ready(function () {
                     spaceBetween: 30,
                 },
             }
+        });
+    }
+    
+    //product-slider
+    if ($('*').is('.product-slider-big')) {
+        var galleryThumbs = new Swiper('.product-slider-small', {
+            spaceBetween: 10,
+            slidesPerView: 2,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button.swiper-button-next',
+                prevEl: '.swiper-button.swiper-button-prev'
+            },
+            breakpoints: {
+                451: {
+                    slidesPerView: 3
+                }
+            }
+        });
+        var galleryTop = new Swiper('.product-slider-big', {
+            loop: true,
+            thumbs: {
+                swiper: galleryThumbs,
+            },
         });
     }
     

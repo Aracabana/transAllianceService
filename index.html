@@ -11,6 +11,7 @@
     <title>Trance Alliance Service</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid-validation-modal-tabs-print.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -35,7 +36,11 @@
     </div>
     <nav id="js-menu-wrapper" class="header-menu-wrapper">
         <div class="container header-menu-container">
-            <button id="js-menu-btn" class="header-menu-btn" type="button"></button>
+            <button id="js-menu-btn" class="header-menu-btn" type="button">
+                <span class="header-menu-btn-item header-menu-btn-item-1"></span>
+                <span class="header-menu-btn-item header-menu-btn-item-2"></span>
+                <span class="header-menu-btn-item header-menu-btn-item-3"></span>
+            </button>
             <ul id="js-menu" class="header-menu">
                 <li class="header-menu-item">
                     <a href="index.html" class="header-menu-link">Главная</a>
@@ -44,38 +49,38 @@
                     <a href="text-page.html" class="header-menu-link">О компании</a>
                 </li>
                 <li class="header-menu-item header-menu-item-with-submenu">
-                    <a href="catalog.html" class="header-menu-link">Каталог</a>
+                    <a href="#services" class="header-menu-link js-link">Каталог</a>
                     <button class="header-submenu-btn js-submenu-btn" type="button"></button>
                     <ul class="header-submenu js-submenu">
                         <li class="header-submenu-item">
-                            <a href="service-page.html" class="header-submenu-link">Воздушные перевозки</a>
+                            <a href="catalog.html" class="header-submenu-link">Воздушные перевозки</a>
                         </li>
                         <li class="header-submenu-item">
-                            <a href="service-page.html" class="header-submenu-link">Морские перевозки</a>
+                            <a href="catalog.html" class="header-submenu-link">Морские перевозки</a>
                         </li>
                         <li class="header-submenu-item">
-                            <a href="service-page.html" class="header-submenu-link">Сухопутные перевозки</a>
+                            <a href="catalog.html" class="header-submenu-link">Сухопутные перевозки</a>
                         </li>
                         <li class="header-submenu-item">
-                            <a href="service-page.html" class="header-submenu-link">Управление отходами</a>
+                            <a href="catalog.html" class="header-submenu-link">Управление отходами</a>
                         </li>
                         <li class="header-submenu-item">
-                            <a href="service-page.html" class="header-submenu-link">Транспортировка отходов</a>
+                            <a href="catalog.html" class="header-submenu-link">Транспортировка отходов</a>
                         </li>
                         <li class="header-submenu-item">
-                            <a href="service-page.html" class="header-submenu-link">Услуги специализированной техники</a>
+                            <a href="catalog.html" class="header-submenu-link">Услуги специализированной техники</a>
                         </li>
                         <li class="header-submenu-item">
-                            <a href="service-page.html" class="header-submenu-link">Аренда осветительных мачт</a>
+                            <a href="catalog.html" class="header-submenu-link">Аренда осветительных мачт</a>
                         </li>
                         <li class="header-submenu-item">
-                            <a href="service-page.html" class="header-submenu-link">Аренда осветительных мачт</a>
+                            <a href="catalog.html" class="header-submenu-link">Аренда осветительных мачт</a>
                         </li>
                         <li class="header-submenu-item">
-                            <a href="service-page.html" class="header-submenu-link">Аренда дизельных генераторов</a>
+                            <a href="catalog.html" class="header-submenu-link">Аренда дизельных генераторов</a>
                         </li>
                         <li class="header-submenu-item">
-                            <a href="service-page.html" class="header-submenu-link">Аренда легкового автотранспорта с водителем и без</a>
+                            <a href="catalog.html" class="header-submenu-link">Аренда легкового автотранспорта с водителем и без</a>
                         </li>
                     </ul>
                 </li>
@@ -98,7 +103,7 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide welcome-slide" style="background-image: url('img/bg-welcome.jpg');">
             <div class="container welcome-container">
-                <div class="welcome-content">
+                <div class="welcome-content wow fadeInLeft">
                     <h1 class="welcome-title">orem ipsum dolor sit amet, consectetur adipisicing elit,</h1>
                     <p class="welcome-text">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <a href="text-page.html" class="btn btn-dark btn-border btn-bold welcome-btn">Подробнее</a>
@@ -107,7 +112,7 @@
         </div>
         <div class="swiper-slide welcome-slide" style="background-image: url('img/bg-welcome.jpg');">
             <div class="container welcome-container">
-                <div class="welcome-content">
+                <div class="welcome-content wow fadeInLeft">
                     <h1 class="welcome-title">orem ipsum dolor sit amet, consectetur adipisicing elit, orem ipsum dolor sit amet, consectetur</h1>
                     <p class="welcome-text">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -117,7 +122,7 @@
         </div>
         <div class="swiper-slide welcome-slide" style="background-image: url('img/bg-welcome.jpg');">
             <div class="container welcome-container">
-                <div class="welcome-content">
+                <div class="welcome-content wow fadeInLeft">
                     <h1 class="welcome-title">orem ipsum dolor sit amet, consectetur adipisicing elit,</h1>
                     <p class="welcome-text">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     <a href="text-page.html" class="btn btn-dark btn-border btn-bold welcome-btn">Подробнее</a>
@@ -132,7 +137,7 @@
     <div class="swiper-pagination"></div>
 </section>
 <section class="home-section advantages">
-    <div class="container">
+    <div class="container wow fadeInUp">
         <h2 class="section-title section-title-decorate advantages-title"><span>Преимущества</span></h2>
         <div class="row">
             <div class="col-sm-4 advantage-wrapper">
@@ -158,12 +163,12 @@
         </div>
     </div>
 </section>
-<section class="home-section services">
+<section id="services" class="home-section services">
     <div class="container">
         <h2 class="section-title section-title-decorate services-title"><span>Услуги</span></h2>
         <div class="row services-wrapper">
             <div class="col-lg-4 col-sm-6 service-wrapper">
-                <a href="service-page.html" class="service" style="background-image: url('img/bg-service-1.jpg')">
+                <a href="catalog.html" class="service wow flipInY" style="background-image: url('img/bg-service-1.jpg')">
                     <div class="service-content">
                         <p class="service-title">Воздушные<br>перевозки</p>
                         <span class="btn btn-dark btn-sm service-btn">Перейти</span>
@@ -171,7 +176,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6 service-wrapper">
-                <a href="service-page.html" class="service" style="background-image: url('img/bg-service-2.jpg')">
+                <a href="catalog.html" class="service wow flipInY" style="background-image: url('img/bg-service-2.jpg')">
                     <div class="service-content">
                         <p class="service-title">Морские<br>перевозки</p>
                         <span class="btn btn-dark btn-sm service-btn">Перейти</span>
@@ -179,7 +184,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6 service-wrapper">
-                <a href="service-page.html" class="service" style="background-image: url('img/bg-service-3.jpg')">
+                <a href="catalog.html" class="service wow flipInY" style="background-image: url('img/bg-service-3.jpg')">
                     <div class="service-content">
                         <p class="service-title">Сухопутные<br>перевозки</p>
                         <span class="btn btn-dark btn-sm service-btn">Перейти</span>
@@ -187,7 +192,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6 service-wrapper">
-                <a href="service-page.html" class="service" style="background-image: url('img/bg-service-4.jpg')">
+                <a href="catalog.html" class="service wow flipInY" style="background-image: url('img/bg-service-4.jpg')">
                     <div class="service-content">
                         <p class="service-title">Управление<br>отходами</p>
                         <span class="btn btn-dark btn-sm service-btn">Перейти</span>
@@ -195,7 +200,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6 service-wrapper">
-                <a href="service-page.html" class="service" style="background-image: url('img/bg-service-5.jpg')">
+                <a href="catalog.html" class="service wow flipInY" style="background-image: url('img/bg-service-5.jpg')">
                     <div class="service-content">
                         <p class="service-title">Транспортировка<br>отходов</p>
                         <span class="btn btn-dark btn-sm service-btn">Перейти</span>
@@ -203,7 +208,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6 service-wrapper">
-                <a href="service-page.html" class="service" style="background-image: url('img/bg-service-6.jpg')">
+                <a href="catalog.html" class="service wow flipInY" style="background-image: url('img/bg-service-6.jpg')">
                     <div class="service-content">
                         <p class="service-title">Услуги специализированной<br>техники</p>
                         <span class="btn btn-dark btn-sm service-btn">Перейти</span>
@@ -211,7 +216,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6 service-wrapper">
-                <a href="service-page.html" class="service" style="background-image: url('img/bg-service-7.jpg')">
+                <a href="catalog.html" class="service wow flipInY" style="background-image: url('img/bg-service-7.jpg')">
                     <div class="service-content">
                         <p class="service-title">Аренда<br>осветительных мачт</p>
                         <span class="btn btn-dark btn-sm service-btn">Перейти</span>
@@ -219,7 +224,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6 service-wrapper">
-                <a href="service-page.html" class="service" style="background-image: url('img/bg-service-8.jpg')">
+                <a href="catalog.html" class="service wow flipInY" style="background-image: url('img/bg-service-8.jpg')">
                     <div class="service-content">
                         <p class="service-title">Аренда<br>дизельных генераторов</p>
                         <span class="btn btn-dark btn-sm service-btn">Перейти</span>
@@ -227,7 +232,7 @@
                 </a>
             </div>
             <div class="col-lg-4 col-sm-6 service-wrapper">
-                <a href="service-page.html" class="service" style="background-image: url('img/bg-service-9.jpg')">
+                <a href="catalog.html" class="service wow flipInY" style="background-image: url('img/bg-service-9.jpg')">
                     <div class="service-content">
                         <p class="service-title">Аренда легкового автотранспорта<br>с водителем и без</p>
                         <span class="btn btn-dark btn-sm service-btn">Перейти</span>
@@ -238,7 +243,7 @@
     </div>
 </section>
 <section class="home-section about">
-    <div class="container">
+    <div class="container wow fadeInUp">
         <h2 class="section-title section-title-white">О проекте</h2>
         <div class="about-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -254,7 +259,7 @@
     </div>
 </section>
 <section class="home-section reviews">
-    <div class="container reviews-container">
+    <div class="container reviews-container wow fadeInUp">
         <h2 class="section-title section-title-decorate reviews-title"><span>Отзывы</span></h2>
         <div class="reviews-slider-wrapper">
             <div class="js-reviews-slider reviews-slider swiper-container">
@@ -307,7 +312,7 @@
         <h2 class="section-title section-title-decorate articles-title"><span>Новости</span></h2>
         <div class="row">
             <div class="col-lg-4 card-wrapper">
-                <a href="text-page.html" class="article-card">
+                <a href="text-page.html" class="article-card wow flipInY">
                     <div class="article-card-img-wrapper" style="background-image: url('img/img-news.jpg')"></div>
                     <div class="article-card-content">
                         <p class="article-card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -322,7 +327,7 @@
                 </a>
             </div>
             <div class="col-lg-4 card-wrapper">
-                <a href="text-page.html" class="article-card">
+                <a href="text-page.html" class="article-card wow flipInY">
                     <div class="article-card-img-wrapper" style="background-image: url('img/img-news.jpg')"></div>
                     <div class="article-card-content">
                         <p class="article-card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -339,7 +344,7 @@
                 </a>
             </div>
             <div class="col-lg-4 card-wrapper">
-                <a href="text-page.html" class="article-card">
+                <a href="text-page.html" class="article-card wow flipInY">
                     <div class="article-card-img-wrapper" style="background-image: url('img/img-news.jpg')"></div>
                     <div class="article-card-content">
                         <p class="article-card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, consectetur adipisicing elit</p>
@@ -383,22 +388,22 @@
         </ul>
         <ul class="footer-menu">
             <li class="footer-menu-item">
-                <a class="footer-menu-link" href="service-page.html">Воздушные, морские, сухопутные перевозки</a>
+                <a class="footer-menu-link" href="catalog.html">Воздушные, морские, сухопутные перевозки</a>
             </li>
             <li class="footer-menu-item">
-                <a class="footer-menu-link" href="service-page.html">Управление отходами</a>
+                <a class="footer-menu-link" href="catalog.html">Управление отходами</a>
             </li>
             <li class="footer-menu-item">
-                <a class="footer-menu-link" href="service-page.html">Транспортировка отходов</a>
+                <a class="footer-menu-link" href="catalog.html">Транспортировка отходов</a>
             </li>
             <li class="footer-menu-item">
-                <a class="footer-menu-link" href="service-page.html">Услуги специализированной техники</a>
+                <a class="footer-menu-link" href="catalog.html">Услуги специализированной техники</a>
             </li>
             <li class="footer-menu-item">
-                <a class="footer-menu-link" href="service-page.html">Аренда осветительных мачт и дизельных генераторов</a>
+                <a class="footer-menu-link" href="catalog.html">Аренда осветительных мачт и дизельных генераторов</a>
             </li>
             <li class="footer-menu-item">
-                <a class="footer-menu-link" href="service-page.html">Аренда легкового автотранспорта с водителем и без</a>
+                <a class="footer-menu-link" href="catalog.html">Аренда легкового автотранспорта с водителем и без</a>
             </li>
         </ul>
         <div class="footer-contacts">
@@ -437,6 +442,12 @@
     </div>
 </div>
 
+<script src="js/wow.min.js"></script>
+<script>
+    window.onload = function () {
+        new WOW().init();
+    };
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/bootstrap-modal.js"></script>
 <script src="js/swiper.min.js"></script>

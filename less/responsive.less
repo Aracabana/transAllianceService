@@ -111,6 +111,15 @@
             font-size: 16px;
         }
     }
+    /*=PRODUCT PAGE=*/
+    .product-table {
+        th {
+            padding: 15px 15px 15px 0;
+        }
+        td {
+            padding: 15px 0 15px 15px;
+        }
+    }
     /*=404=*/
     .error-title {
         font-size: 254px;
@@ -224,6 +233,27 @@
             margin-right: auto;
         }
     }
+    /*=CATALOG=*/
+    .catalog-menu {
+        margin-bottom: 50px;
+    }
+    /*=CONTACTS=*/
+    .contacts-item {
+        display: block;
+        &-img-wrapper {
+            margin: 0 auto 20px;
+        }
+        &-text {
+            text-align: center;
+        }
+    }
+    /*=PRODUCT PAGE=*/
+    .product-slider {
+        margin-bottom: 60px;
+    }
+    .product-characteristics {
+        padding-left: 0;
+    }
     /*=404=*/
     .error-wrapper {
         display: block;
@@ -263,6 +293,11 @@
         margin-bottom: 55px;
         font-size: 36px;
     }
+    /*=LINKS&FORMS=*/
+    .form-group-btn {
+        margin-bottom: 30px;
+    }
+    /*forms*/
     /*=HEADER=*/
     .header-container {
         display: block;
@@ -517,11 +552,11 @@
             line-height: 28px;
             &-prev {
                 .border-radius(29px);
-                width: 58px;
+                width: 54px;
             }
             &-next {
                 .border-radius(29px);
-                width: 58px;
+                width: 54px;
             }
         }
     }
@@ -582,6 +617,38 @@
         }
     }
     .advantage {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        max-width: 290px;
+        margin: 0 auto;
+        &-img-wrapper {
+            margin: 0 10px 0 -8px;
+        }
+        &-text {
+            text-align: left;
+        }
+    }
+    /*=PRODUCT PAGE=*/
+    .product-slider-small-wrapper {
+        .swiper-button-prev {
+            left: 0;
+        }
+        .swiper-button-next {
+            right: 0;
+        }
+    }
+    .product-table {
+        th {
+            padding: 10px 10px 10px 0;
+        }
+        td {
+            padding: 10px 0 10px 10px;
+        }
+    }
+    /*=CONTACTS=*/
+    .contacts-item {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;

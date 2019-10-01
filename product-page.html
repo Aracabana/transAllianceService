@@ -11,6 +11,7 @@
     <title>Trance Alliance Service</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid-validation-modal-tabs-print.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -106,58 +107,130 @@
     </div>
     <section class="section-inner">
         <div class="container">
-            <h1 class="section-title page-title section-title-decorate"><span>Контакты</span></h1>
-            <div class="row contacts">
-                <div class="col-sm-4 contacts-item-wrapper">
-                    <div class="contacts-item contacts-item-1">
-                        <div class="contacts-item-img-wrapper contacts-item-img-wrapper-1"></div>
-                        <p class="contacts-item-text"><a href="tel:+79161234567">+7 916 123-45-67</a></p>
+            <h1 class="section-title page-title section-title-decorate"><span>Название товара</span></h1>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-slider">
+                        <div class="swiper-container product-slider-big">
+                            <div class="swiper-wrapper">
+                                <a href="img/img-product-biger.jpg" data-fancybox="gallery" class="swiper-slide product-slide-big">
+                                    <img src="img/img-product-big.jpg" alt="">
+                                </a>
+                                <a href="img/img-product-biger.jpg" data-fancybox="gallery" class="swiper-slide product-slide-big">
+                                    <img src="img/img-product-big.jpg" alt="">
+                                </a>
+                                <a href="img/img-product-biger.jpg" data-fancybox="gallery" class="swiper-slide product-slide-big">
+                                    <img src="img/img-product-big.jpg" alt="">
+                                </a>
+                                <a href="img/img-product-biger.jpg" data-fancybox="gallery" class="swiper-slide product-slide-big">
+                                    <img src="img/img-product-big.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-slider-small-wrapper">
+                            <div class="swiper-container product-slider-small">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide product-slide-small">
+                                        <img src="img/img-product-small.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide product-slide-small">
+                                        <img src="img/img-product-small.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide product-slide-small">
+                                        <img src="img/img-product-small.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide product-slide-small">
+                                        <img src="img/img-product-small.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button swiper-button-next"></div>
+                            <div class="swiper-button swiper-button-prev"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4 contacts-item-wrapper">
-                    <div class="contacts-item contacts-item-2">
-                        <div class="contacts-item-img-wrapper contacts-item-img-wrapper-2"></div>
-                        <p class="contacts-item-text"><a href="mailto:info@mail.ru">info@mail.ru</a></p>
-                    </div>
-                </div>
-                <div class="col-sm-4 contacts-item-wrapper">
-                    <div class="contacts-item contacts-item-3">
-                        <div class="contacts-item-img-wrapper contacts-item-img-wrapper-3"></div>
-                        <p class="contacts-item-text">г. Москва, ул. Первая, д. 136, корпус 123, офис 45</p>
+                <div class="col-lg-6">
+                    <div class="product-characteristics">
+                        <h2>Характеристики</h2>
+                        <div class="table-wrapper product-table-wrapper">
+                            <table class="product-table">
+                                <tr>
+                                    <th>Название характеристики</th>
+                                    <td>На этом месте будут параметры </td>
+                                </tr>
+                                <tr>
+                                    <th>Название характеристики</th>
+                                    <td>На этом месте будут параметры </td>
+                                </tr>
+                                <tr>
+                                    <th>Название характеристики</th>
+                                    <td>На этом месте будут параметры </td>
+                                </tr>
+                                <tr>
+                                    <th>Название характеристики</th>
+                                    <td>На этом месте будут параметры </td>
+                                </tr>
+                                <tr>
+                                    <th>Название характеристики</th>
+                                    <td>На этом месте будут параметры </td>
+                                </tr>
+                                <tr>
+                                    <th>Название характеристики</th>
+                                    <td>На этом месте будут параметры </td>
+                                </tr>
+                                <tr>
+                                    <th>Название характеристики</th>
+                                    <td>На этом месте будут параметры </td>
+                                </tr>
+                                <tr>
+                                    <th>Название характеристики</th>
+                                    <td>На этом месте будут параметры </td>
+                                </tr>
+                                <tr>
+                                    <th>Название характеристики</th>
+                                    <td>На этом месте будут параметры </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="map-wrapper">
-                <script type="text/javascript" charset="utf-8" async
-                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0364d6f31d5cf59e3686db5639de064eca9e0a76040e323acf217296dc56c9b7&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true"></script>
-            </div>
+            <article class="text-section product-description">
+                <h2>Описание</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <ul>
+                    <li>enim ad minim veniam, quis no</li>
+                    <li>enim ad minim veniam, quis no</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </article>
         </div>
     </section>
     <section class="section-inner form-section">
         <div class="container">
-            <h2 class="section-title section-title-white">Форма обратной связи</h2>
-            <form id="contacts-form" class="contacts-form">
+            <h2 class="section-title section-title-white">Форма заявки</h2>
+            <form id="order-form" class="order-form">
                 <div class="row align-items-center">
                     <div class="col-md-4 form-group order-md-1">
-                        <input id="contacts-name" name="contacts-name" type="text" class="form-control form-control-light" placeholder="Имя" required>
+                        <input id="order-name" name="order-name" type="text" class="form-control form-control-light" placeholder="Имя" required>
                     </div>
                     <div class="col-md-4 form-group order-md-2">
-                        <input id="contacts-tel" name="contacts-tel" type="tel" class="form-control form-control-light" placeholder="Телефон">
+                        <input id="order-tel" name="order-tel" type="tel" class="form-control form-control-light" placeholder="Телефон">
                     </div>
                     <div class="col-md-4 form-group order-md-3">
-                        <input id="contacts-email" name="contacts-email" type="email" class="form-control form-control-light" placeholder="E-mail">
+                        <input id="order-email" name="order-email" type="email" class="form-control form-control-light" placeholder="E-mail">
                     </div>
-                <div class="col-12 order-md-4 form-group form-group-big">
-                    <input id="contacts-comment" class="form-control form-control-light" name="contacts-comment"
-                              placeholder="Сообщение">
-                </div>
-                <div class="col-md-4 order-md-5 form-group-btn">
-                    <button class="btn btn-block btn-dark btn-border btn-submit">Отправить</button>
-                </div>
-                <div class="col-md-8 order-md-6">
-                    <p class="form-disclaimer form-disclaimer-light">Нажимая "Отправить" Вы даете согласие на обработку персональных данных и соглашаетесь
-                        c&nbsp;<a href="text-page.html">пользовательским соглашением и политикой конфиденциальности</a>.</p>
-                </div>
+                    <div class="col-12 order-md-4 form-group form-group-big">
+                        <input id="order-comment" class="form-control form-control-light" name="order-comment"
+                               placeholder="Сообщение">
+                    </div>
+                    <div class="col-md-4 order-md-5 form-group-btn">
+                        <button class="btn btn-block btn-dark btn-border btn-submit">Отправить</button>
+                    </div>
+                    <div class="col-md-8 order-md-6">
+                        <p class="form-disclaimer form-disclaimer-light">Нажимая "Отправить" Вы даете согласие на обработку персональных данных и соглашаетесь
+                            c&nbsp;<a href="text-page.html">пользовательским соглашением и политикой конфиденциальности</a>.</p>
+                    </div>
                 </div>
             </form>
         </div>
@@ -243,6 +316,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/bootstrap-modal.js"></script>
+<script src="js/swiper.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/main.js"></script>
 </body>
